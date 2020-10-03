@@ -1,0 +1,311 @@
+-- Farewell Infortality.
+-- Version: 2.82
+-- Instances:
+local RoGhoulStatChecker = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Close = Instance.new("TextButton")
+local LoadValues = Instance.new("TextButton")
+local Username = Instance.new("TextBox")
+local Durability = Instance.new("TextLabel")
+local Level = Instance.new("TextLabel")
+local Name = Instance.new("TextLabel")
+local Physical = Instance.new("TextLabel")
+local Nickname = Instance.new("TextLabel")
+local Rc = Instance.new("TextLabel")
+local Kagune = Instance.new("TextLabel")
+local Speed = Instance.new("TextLabel")
+local Weapon = Instance.new("TextLabel")
+local Yen = Instance.new("TextLabel")
+local Rep = Instance.new("TextLabel")
+local Exp = Instance.new("TextLabel")
+--Properties:
+RoGhoulStatChecker.Name = "Ro-Ghoul Stat Checker"
+RoGhoulStatChecker.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+RoGhoulStatChecker.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = RoGhoulStatChecker
+MainFrame.BackgroundColor3 = Color3.new(0, 0, 0)
+MainFrame.BackgroundTransparency = 0.20000000298023
+MainFrame.Position = UDim2.new(0.171198383, 0, 0.0815939307, 0)
+MainFrame.Size = UDim2.new(0, 286, 0, 211)
+MainFrame.Draggable = true
+MainFrame.Active = true
+
+Title.Name = "Title"
+Title.Parent = MainFrame
+Title.BackgroundColor3 = Color3.new(0.333333, 0.333333, 0.333333)
+Title.Size = UDim2.new(0, 235, 0, 39)
+Title.Font = Enum.Font.SourceSans
+Title.Text = "Ro-Ghoul Stat Checker"
+Title.TextColor3 = Color3.new(0, 0, 0)
+Title.TextSize = 25
+
+Close.Name = "Close"
+Close.Parent = MainFrame
+Close.BackgroundColor3 = Color3.new(0.333333, 0.333333, 0.333333)
+Close.Position = UDim2.new(0.823642433, 0, 0, 0)
+Close.Size = UDim2.new(0, 50, 0, 39)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.new(1, 0, 0.0156863)
+Close.TextSize = 50
+Close.MouseButton1Down:connect(function()
+	Close.Visible = false
+	MainFrame.Visible = false
+	                game:GetService("StarterGui"):SetCore("SendNotification",{
+Title = "BIG OOF",
+Text = "Hope You Liked The Gui M8's",
+Duration = 6,
+        })
+        wait(0.5)
+end)
+
+LoadValues.Name = "LoadValues"
+LoadValues.Parent = MainFrame
+LoadValues.BackgroundColor3 = Color3.new(0.47451, 0.47451, 0.47451)
+LoadValues.Position = UDim2.new(0.656862915, 0, 0.232945219, 0)
+LoadValues.Size = UDim2.new(0, 88, 0, 25)
+LoadValues.Font = Enum.Font.SourceSans
+LoadValues.Text = "Load Values"
+LoadValues.TextColor3 = Color3.new(0, 0, 0)
+LoadValues.TextSize = 20
+LoadValues.MouseButton1Down:connect(function()
+game:GetService("StarterGui"):SetCore("SendNotification",{
+Title = "Stats Are Good",
+Text = "There's Those Stats",
+Duration = 6,
+        })
+        wait(0.5)
+end)
+
+Username.Name = "Username"
+Username.Parent = MainFrame
+Username.BackgroundColor3 = Color3.new(0.47451, 0.47451, 0.47451)
+Username.Position = UDim2.new(0.0123862959, 0, 0.212396413, 0)
+Username.Size = UDim2.new(0, 173, 0, 32)
+Username.Font = Enum.Font.SourceSans
+Username.Text = "Player Name"
+Username.TextColor3 = Color3.new(0, 0, 0)
+Username.TextSize = 18
+
+Durability.Name = "Durability"
+Durability.Parent = MainFrame
+Durability.BackgroundColor3 = Color3.new(1, 1, 1)
+Durability.BackgroundTransparency = 1
+Durability.Position = UDim2.new(0.019219242, 0, 0.737394452, 0)
+Durability.Size = UDim2.new(0, 94, 0, 18)
+Durability.Font = Enum.Font.SourceSans
+Durability.Text = "Durability: N/A"
+Durability.TextColor3 = Color3.new(1, 1, 1)
+Durability.TextSize = 17
+
+Level.Name = "Level"
+Level.Parent = MainFrame
+Level.BackgroundColor3 = Color3.new(1, 1, 1)
+Level.BackgroundTransparency = 1
+Level.Position = UDim2.new(0.533822417, 0, 0.745051742, 0)
+Level.Size = UDim2.new(0, 94, 0, 17)
+Level.Font = Enum.Font.SourceSans
+Level.Text = "Level: N/A"
+Level.TextColor3 = Color3.new(1, 1, 1)
+Level.TextSize = 17
+
+Name.Name = "Name"
+Name.Parent = MainFrame
+Name.BackgroundColor3 = Color3.new(1, 1, 1)
+Name.BackgroundTransparency = 1
+Name.Position = UDim2.new(0.348050624, 0, 0.390130311, 0)
+Name.Size = UDim2.new(0, 78, 0, 20)
+Name.Font = Enum.Font.SourceSans
+Name.Text = "Name: N/A"
+Name.TextColor3 = Color3.new(1, 1, 1)
+Name.TextSize = 17
+
+Physical.Name = "Physical"
+Physical.Parent = MainFrame
+Physical.BackgroundColor3 = Color3.new(1, 1, 1)
+Physical.BackgroundTransparency = 1
+Physical.Position = UDim2.new(0.536861837, 0, 0.653080225, 0)
+Physical.Size = UDim2.new(0, 94, 0, 20)
+Physical.Font = Enum.Font.SourceSans
+Physical.Text = "Physical: N/A"
+Physical.TextColor3 = Color3.new(1, 1, 1)
+Physical.TextSize = 17
+
+Nickname.Name = "Nickname"
+Nickname.Parent = MainFrame
+Nickname.BackgroundColor3 = Color3.new(1, 1, 1)
+Nickname.BackgroundTransparency = 1
+Nickname.Position = UDim2.new(0.28861016, 0, 0.482464164, 0)
+Nickname.Size = UDim2.new(0, 93, 0, 19)
+Nickname.Font = Enum.Font.SourceSans
+Nickname.Text = "Nickname: N/A"
+Nickname.TextColor3 = Color3.new(1, 1, 1)
+Nickname.TextSize = 17
+
+Rc.Name = "Rc"
+Rc.Parent = MainFrame
+Rc.BackgroundColor3 = Color3.new(1, 1, 1)
+Rc.BackgroundTransparency = 1
+Rc.Position = UDim2.new(0.0088898465, 0, 0.65726018, 0)
+Rc.Size = UDim2.new(0, 94, 0, 13)
+Rc.Font = Enum.Font.SourceSans
+Rc.Text = "Rc: N/A"
+Rc.TextColor3 = Color3.new(1, 1, 1)
+Rc.TextSize = 17
+
+Kagune.Name = "Kagune"
+Kagune.Parent = MainFrame
+Kagune.BackgroundColor3 = Color3.new(1, 1, 1)
+Kagune.BackgroundTransparency = 1
+Kagune.Position = UDim2.new(0.536861777, 0, 0.808484435, 0)
+Kagune.Size = UDim2.new(0, 94, 0, 18)
+Kagune.Font = Enum.Font.SourceSans
+Kagune.Text = "Damage: N/A"
+Kagune.TextColor3 = Color3.new(1, 1, 1)
+Kagune.TextSize = 17
+
+Speed.Name = "Speed"
+Speed.Parent = MainFrame
+Speed.BackgroundColor3 = Color3.new(1, 1, 1)
+Speed.BackgroundTransparency = 1
+Speed.Position = UDim2.new(0.533365428, 0, 0.590909481, 0)
+Speed.Size = UDim2.new(0, 94, 0, 14)
+Speed.Font = Enum.Font.SourceSans
+Speed.Text = "Speed: N/A"
+Speed.TextColor3 = Color3.new(1, 1, 1)
+Speed.TextSize = 17
+
+Weapon.Name = "Weapon"
+Weapon.Parent = MainFrame
+Weapon.BackgroundColor3 = Color3.new(1, 1, 1)
+Weapon.BackgroundTransparency = 1
+Weapon.Position = UDim2.new(0.0193792582, 0, 0.585251153, 0)
+Weapon.Size = UDim2.new(0, 94, 0, 15)
+Weapon.Font = Enum.Font.SourceSans
+Weapon.Text = "Weapon: N/A"
+Weapon.TextColor3 = Color3.new(1, 1, 1)
+Weapon.TextSize = 17
+
+Yen.Name = "Yen"
+Yen.Parent = MainFrame
+Yen.BackgroundColor3 = Color3.new(1, 1, 1)
+Yen.BackgroundTransparency = 1
+Yen.Position = UDim2.new(0.0158828795, 0, 0.91226542, 0)
+Yen.Size = UDim2.new(0, 94, 0, 13)
+Yen.Font = Enum.Font.SourceSans
+Yen.Text = "Yen: N/A"
+Yen.TextColor3 = Color3.new(1, 1, 1)
+Yen.TextSize = 17
+
+Rep.Name = "Rep"
+Rep.Parent = MainFrame
+Rep.BackgroundColor3 = Color3.new(1, 1, 1)
+Rep.BackgroundTransparency = 1
+Rep.Position = UDim2.new(0.0193793029, 0, 0.827441812, 0)
+Rep.Size = UDim2.new(0, 94, 0, 14)
+Rep.Font = Enum.Font.SourceSans
+Rep.Text = "Rep: N/A"
+Rep.TextColor3 = Color3.new(1, 1, 1)
+Rep.TextSize = 17
+
+Exp.Name = "Exp"
+Exp.Parent = MainFrame
+Exp.BackgroundColor3 = Color3.new(1, 1, 1)
+Exp.BackgroundTransparency = 1
+Exp.Position = UDim2.new(0.533365428, 0, 0.91226542, 0)
+Exp.Size = UDim2.new(0, 94, 0, 13)
+Exp.Font = Enum.Font.SourceSans
+Exp.Text = "Exp: N/A"
+Exp.TextColor3 = Color3.new(1, 1, 1)
+Exp.TextSize = 17
+
+game:GetService("StarterGui"):SetCore("SendNotification",{
+Title = "Welcome",
+Text = "Gui Made By DragonBornGodess",
+Duration = 6,
+        })
+        wait(0.5)
+-- Scripts:
+
+local function split(pString, pPattern) local Table = {} local fpat = "(.-)" .. pPattern local last_end = 1 local s, e, cap = pString:find(fpat, 1) while s do if s ~= 1 or cap ~= "" then table.insert(Table,cap) end last_end = e+1 s, e, cap = pString:find(fpat, last_end) end if last_end <= #pString then cap = pString:sub(last_end) table.insert(Table, cap) end return Table end
+
+local playercrnt = game:GetService("Players").LocalPlayer
+local Mouse = playercrnt:GetMouse()
+
+local function getstats(playername)
+	local plrfolder = game.Players[playername].PlayerFolder
+	local durability = tostring(plrfolder.Stats.Durability.Value)
+	local level = tostring(plrfolder.Stats.Level.Value)
+	local physical = tostring(plrfolder.Stats.Physical.Value)
+	local rc = tostring(plrfolder.Stats.RC.Value)
+	local speed = tostring(plrfolder.Stats.Speed.Value)
+	local damage = tostring(plrfolder.Stats.Weapon.Value)
+	local weapon = tostring(plrfolder.Customization.Weapon.Value)
+	local nickname = tostring(plrfolder.Customization.Nickname.Value)
+	local exp = tostring(plrfolder.Stats.Experience.Value)
+	local yen = tostring(plrfolder.Stats.Yen.Value)
+	local rep = tostring(plrfolder.Stats.Reputation.Value)
+	local username = game.Players[playername].Name
+    Durability.Text = ("Durability: " .. durability)
+    Level.Text = ("Level: " .. level)
+    Physical.Text = ("Physical: " .. physical)
+    Rc.Text = ("RC: " .. rc)
+    Speed.Text = ("Speed: " .. speed)
+    Kagune.Text = ("Damage: " .. damage)
+    Weapon.Text = ("Weapon: " .. weapon)
+    Nickname.Text = ("Nickname: " .. nickname)
+    Yen.Text = ("Yen: " .. yen)
+    Rep.Text = ("Rep: " .. rep)
+    Exp.Text =("EXP: " .. exp)
+    Name.Text = ("Username: " .. username)
+end
+---------------------------------------------------
+Mouse.Button1Down:connect(function()
+if not game:GetService("UserInputService"):IsKeyDown(Enum.KeyCode.LeftControl) then return end
+if not Mouse.Target then return end
+local nonparent = Mouse.Target
+local idk = nonparent.Parent.Parent.Name
+local idk1 = nonparent.Parent.Name
+if idk.Name == "Workspace" then getstats(idk1) else getstats(idk)
+end
+end)
+-----------------------------------------------------
+LoadValues.MouseButton1Click:connect(function()
+	local playernametxt = Username.Text
+	getstats(playernametxt)
+end)
+-----------------------------------------------------
+for _,v in pairs(game.Players:GetChildren()) do
+      
+	v.Chatted:connect(function(msg)
+	 if string.match(msg, "getstats!") then
+	 if v.Name == game.Players.LocalPlayer.Name then
+		local username = split(msg, "!")[2]
+                local teamvalue = game.Players[username].PlayerFolder.Customization.Team.Value
+                local teame = "N/A"
+                if teamvalue == "CCG" then
+                teame = "Quinque"
+                elseif teamvalue == "Ghoul" then
+                teame = "Kagune"
+                end
+		local durability = tostring(game.Players[username].PlayerFolder.Stats.Durability.Value)
+                local level = tostring(game.Players[username].PlayerFolder.Stats.Level.Value)
+                local physical = tostring(game.Players[username].PlayerFolder.Stats.Physical.Value)
+                local rc = tostring(game.Players[username].PlayerFolder.Stats.RC.Value)
+                local speed = tostring(game.Players[username].PlayerFolder.Stats.Speed.Value)
+                local damage = tostring(game.Players[username].PlayerFolder.Stats.Weapon.Value)
+                local weapon = tostring(game.Players[username].PlayerFolder.Customization.Weapon.Value)
+                local nickname = tostring(game.Players[username].PlayerFolder.Customization.Nickname.Value)
+                local exp = tostring(game.Players[username].PlayerFolder.Stats.Experience.Value)
+                local yen = tostring(game.Players[username].PlayerFolder.Stats.Yen.Value)
+                local rep = tostring(game.Players[username].PlayerFolder.Stats.Reputation.Value)
+                local level = tostring(game.Players[username].PlayerFolder.Stats.Level.Value)
+		wait(1)
+		game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Level; " .. level .. "." .. "Physical; " .. physical .. "." .. teame .. "; " .. damage .. "." .. "Durability; " .. durability .. "." .. "Speed; " .. speed .. ".", "All")
+	     end 
+	     end
+	end)
+end
