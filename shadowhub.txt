@@ -1,0 +1,341 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local shadowhubV2 = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local List = Instance.new("ScrollingFrame")
+local Sb2 = Instance.new("TextButton")
+local Dust = Instance.new("TextButton")
+local Arsenal = Instance.new("TextButton")
+local Roghoul = Instance.new("TextButton")
+local electricstate = Instance.new("TextButton")
+local Exitframe = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local Exit = Instance.new("TextButton")
+local Arsenalframe = Instance.new("Frame")
+local Duckhub = Instance.new("TextButton")
+local CtrlAimbot = Instance.new("TextButton")
+local espgui = Instance.new("TextButton")
+local RoGhoulFrame = Instance.new("Frame")
+local ROgscript = Instance.new("TextButton")
+local SB2frame = Instance.new("Frame")
+local Killauragui = Instance.new("TextButton")
+local Kreeperuv = Instance.new("TextButton")
+local DustFrame = Instance.new("Frame")
+local TextLabel_2 = Instance.new("TextLabel")
+local Electricframe = Instance.new("Frame")
+local Electricscript = Instance.new("TextButton")
+local Openframe = Instance.new("Frame")
+local Open = Instance.new("TextButton")
+
+--Properties:
+
+shadowhubV2.Name = "shadowhubV2"
+shadowhubV2.Parent = game.CoreGui
+
+Main.Name = "Main"
+Main.Parent = shadowhubV2
+Main.Active = true
+Main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Main.Position = UDim2.new(0.209821418, 0, 0.127968341, 0)
+Main.Size = UDim2.new(0, 390, 0, 280)
+Main.Visible = false
+
+List.Name = "List"
+List.Parent = Main
+List.Active = true
+List.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+List.Position = UDim2.new(0, 0, 0.175000012, 0)
+List.Size = UDim2.new(0, 93, 0, 231)
+
+Sb2.Name = "Sb2"
+Sb2.Parent = List
+Sb2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Sb2.Position = UDim2.new(0.00999992155, 0, -0.002443559, 0)
+Sb2.Size = UDim2.new(0, 77, 0, 36)
+Sb2.Font = Enum.Font.SourceSans
+Sb2.Text = "SB2"
+Sb2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Sb2.TextSize = 14.000
+Sb2.MouseButton1Down:connect(function()
+SB2frame.Visible = true
+DustFrame.Visible = false
+Arsenalframe.Visible = false
+RoGhoulFrame.Visible = false
+end)
+
+Dust.Name = "Dust"
+Dust.Parent = List
+Dust.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Dust.Position = UDim2.new(0.00999992155, 0, 0.086524412, 0)
+Dust.Size = UDim2.new(0, 77, 0, 36)
+Dust.Font = Enum.Font.SourceSans
+Dust.Text = "Dust"
+Dust.TextColor3 = Color3.fromRGB(255, 255, 255)
+Dust.TextSize = 14.000
+Dust.MouseButton1Down:connect(function()
+SB2frame.Visible = false
+DustFrame.Visible = true
+Arsenalframe.Visible = false
+RoGhoulFrame.Visible = false
+end)
+
+Arsenal.Name = "Arsenal"
+Arsenal.Parent = List
+Arsenal.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Arsenal.Position = UDim2.new(0.00999992155, 0, 0.180830464, 0)
+Arsenal.Size = UDim2.new(0, 77, 0, 36)
+Arsenal.Font = Enum.Font.SourceSans
+Arsenal.Text = "Arsenal"
+Arsenal.TextColor3 = Color3.fromRGB(255, 255, 255)
+Arsenal.TextSize = 14.000
+Arsenal.MouseButton1Down:connect(function()
+SB2frame.Visible = false
+DustFrame.Visible = false
+Arsenalframe.Visible = true
+RoGhoulFrame.Visible = false
+end)
+
+Roghoul.Name = "Roghoul"
+Roghoul.Parent = List
+Roghoul.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Roghoul.Position = UDim2.new(0.00999992155, 0, 0.276915878, 0)
+Roghoul.Size = UDim2.new(0, 77, 0, 36)
+Roghoul.Font = Enum.Font.SourceSans
+Roghoul.Text = "Roghoul"
+Roghoul.TextColor3 = Color3.fromRGB(255, 255, 255)
+Roghoul.TextSize = 14.000
+Roghoul.MouseButton1Down:connect(function()
+SB2frame.Visible = false
+DustFrame.Visible = false
+Arsenalframe.Visible = false
+RoGhoulFrame.Visible = true
+end)
+
+electricstate.Name = "electric state"
+electricstate.Parent = List
+electricstate.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+electricstate.Position = UDim2.new(0.00999992155, 0, 0.364415884, 0)
+electricstate.Size = UDim2.new(0, 77, 0, 36)
+electricstate.Font = Enum.Font.SourceSans
+electricstate.Text = "Electric state"
+electricstate.TextColor3 = Color3.fromRGB(255, 255, 255)
+electricstate.TextSize = 14.000
+electricstate.MouseButton1Down:connect(function()
+SB2frame.Visible = false
+DustFrame.Visible = false
+Arsenalframe.Visible = false
+RoGhoulFrame.Visible = false
+Electricframe.Visible = true
+end)
+
+Exitframe.Name = "Exit frame"
+Exitframe.Parent = Main
+Exitframe.Active = true
+Exitframe.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Exitframe.Size = UDim2.new(0, 390, 0, 48)
+
+TextLabel.Parent = Exitframe
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.Position = UDim2.new(0.0023845965, 0, 0.145833328, 0)
+TextLabel.Size = UDim2.new(0, 165, 0, 41)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "All credits to Shadow5c"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+Exit.Name = "Exit"
+Exit.Parent = Exitframe
+Exit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Exit.Position = UDim2.new(0.866666675, 0, 0, 0)
+Exit.Size = UDim2.new(0, 52, 0, 48)
+Exit.Font = Enum.Font.SourceSans
+Exit.Text = "X"
+Exit.TextColor3 = Color3.fromRGB(0, 0, 0)
+Exit.TextScaled = true
+Exit.TextSize = 14.000
+Exit.TextWrapped = true
+Exit.MouseButton1Down:connect(function()
+Openframe.Visible = true
+Main.Visible = false
+end)
+
+Arsenalframe.Name = "Arsenal frame"
+Arsenalframe.Parent = Main
+Arsenalframe.Active = true
+Arsenalframe.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Arsenalframe.Position = UDim2.new(0.238461539, 0, 0.178063095, 0)
+Arsenalframe.Size = UDim2.new(0, 297, 0, 229)
+Arsenalframe.Visible = false
+
+Duckhub.Name = "Duckhub"
+Duckhub.Parent = Arsenalframe
+Duckhub.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Duckhub.Position = UDim2.new(0.0466950089, 0, 0.0555595905, 0)
+Duckhub.Size = UDim2.new(0, 90, 0, 33)
+Duckhub.Font = Enum.Font.SourceSans
+Duckhub.Text = "Duckhub"
+Duckhub.TextColor3 = Color3.fromRGB(255, 255, 255)
+Duckhub.TextSize = 14.000
+Duckhub.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Xarkkz/Dex-Explorer/main/AS%20(1).txt', true))()
+end)
+
+CtrlAimbot.Name = "CtrlAimbot"
+CtrlAimbot.Parent = Arsenalframe
+CtrlAimbot.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+CtrlAimbot.Position = UDim2.new(0.389093369, 0, 0.0531110466, 0)
+CtrlAimbot.Size = UDim2.new(0, 90, 0, 33)
+CtrlAimbot.Font = Enum.Font.SourceSans
+CtrlAimbot.Text = "Ctrlaimbot"
+CtrlAimbot.TextColor3 = Color3.fromRGB(255, 255, 255)
+CtrlAimbot.TextSize = 14.000
+CtrlAimbot.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Xarkkz/Dex-Explorer/main/kKJadq0Q.txt', true))()
+end)
+
+espgui.Name = "esp gui"
+espgui.Parent = Arsenalframe
+espgui.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+espgui.Position = UDim2.new(0.732242823, 0, 0.0531110466, 0)
+espgui.Size = UDim2.new(0, 73, 0, 33)
+espgui.Font = Enum.Font.SourceSans
+espgui.Text = "esp gui"
+espgui.TextColor3 = Color3.fromRGB(255, 255, 255)
+espgui.TextSize = 14.000
+espgui.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Xarkkz/Dex-Explorer/main/esp_script.txt', true))()
+end)
+
+RoGhoulFrame.Name = "RoGhoul Frame"
+RoGhoulFrame.Parent = Main
+RoGhoulFrame.Active = true
+RoGhoulFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RoGhoulFrame.Position = UDim2.new(0.238461539, 0, 0.174999997, 0)
+RoGhoulFrame.Size = UDim2.new(0, 297, 0, 231)
+RoGhoulFrame.Visible = false
+
+ROgscript.Name = "ROgscript"
+ROgscript.Parent = RoGhoulFrame
+ROgscript.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ROgscript.Position = UDim2.new(0.0466949753, 0, 0.0555595644, 0)
+ROgscript.Size = UDim2.new(0, 248, 0, 158)
+ROgscript.Font = Enum.Font.SourceSans
+ROgscript.Text = "Open"
+ROgscript.TextColor3 = Color3.fromRGB(255, 255, 255)
+ROgscript.TextScaled = true
+ROgscript.TextSize = 14.000
+ROgscript.TextWrapped = true
+ROgscript.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Xarkkz/Dex-Explorer/main/ro%20ghoul%20autofarm.txt', true))()
+end)
+
+SB2frame.Name = "SB2 frame"
+SB2frame.Parent = Main
+SB2frame.Active = true
+SB2frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SB2frame.Position = UDim2.new(0.238461539, 0, 0.178063095, 0)
+SB2frame.Size = UDim2.new(0, 297, 0, 230)
+SB2frame.Visible = false
+
+Killauragui.Name = "Killauragui"
+Killauragui.Parent = SB2frame
+Killauragui.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Killauragui.Position = UDim2.new(0.0466950089, 0, 0.0555595905, 0)
+Killauragui.Size = UDim2.new(0, 90, 0, 33)
+Killauragui.Font = Enum.Font.SourceSans
+Killauragui.Text = "KIllauragui"
+Killauragui.TextColor3 = Color3.fromRGB(255, 255, 255)
+Killauragui.TextSize = 14.000
+Killauragui.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Xarkkz/Dex-Explorer/main/killauraguisb2', true))()
+end)
+
+Kreeperuv.Name = "Kreeperuv"
+Kreeperuv.Parent = SB2frame
+Kreeperuv.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Kreeperuv.Position = UDim2.new(0.383395344, 0, 0.0555595905, 0)
+Kreeperuv.Size = UDim2.new(0, 90, 0, 33)
+Kreeperuv.Font = Enum.Font.SourceSans
+Kreeperuv.Text = "Kreeperuv"
+Kreeperuv.TextColor3 = Color3.fromRGB(255, 255, 255)
+Kreeperuv.TextSize = 14.000
+Kreeperuv.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Xarkkz/Dex-Explorer/main/WxuHk9Ss.txt', true))()
+end)
+
+DustFrame.Name = "DustFrame"
+DustFrame.Parent = Main
+DustFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+DustFrame.Position = UDim2.new(0.238461539, 0, 0.174999997, 0)
+DustFrame.Size = UDim2.new(0, 297, 0, 231)
+DustFrame.Visible = false
+
+TextLabel_2.Parent = DustFrame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.Size = UDim2.new(0, 297, 0, 235)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Comeing soon..."
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+Electricframe.Name = "Electricframe"
+Electricframe.Parent = Main
+Electricframe.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Electricframe.Position = UDim2.new(0.238461539, 0, 0.174999997, 0)
+Electricframe.Size = UDim2.new(0, 297, 0, 231)
+Electricframe.Visible = false
+
+Electricscript.Name = "Electricscript"
+Electricscript.Parent = Electricframe
+Electricscript.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Electricscript.Size = UDim2.new(0, 297, 0, 231)
+Electricscript.Font = Enum.Font.SourceSans
+Electricscript.Text = "Click"
+Electricscript.TextColor3 = Color3.fromRGB(255, 255, 255)
+Electricscript.TextSize = 14.000
+Electricscript.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('loadstring(game:HttpGet("https://pastebin.com/raw/nv9EyBBd", true))()', true))()
+end)
+
+Openframe.Name = "Openframe"
+Openframe.Parent = shadowhubV2
+Openframe.Active = true
+Openframe.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Openframe.Position = UDim2.new(0.617559552, 0, 0.563324451, 0)
+Openframe.Size = UDim2.new(0, 239, 0, 168)
+
+Open.Name = "Open"
+Open.Parent = Openframe
+Open.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Open.Position = UDim2.new(0, 0, -0.000541143119, 0)
+Open.Size = UDim2.new(0, 239, 0, 168)
+Open.Font = Enum.Font.SourceSans
+Open.Text = "ShadowHub"
+Open.TextColor3 = Color3.fromRGB(255, 255, 255)
+Open.TextScaled = true
+Open.TextSize = 14.000
+Open.TextWrapped = true
+Openframe.Visible = false
+Main.Visible = true
+end)
+
+
+-- Scripts:
+
+local function ZVFFSY_fake_script() -- Main.LocalScript 
+    local script = Instance.new('LocalScript', Main)
+
+    -- put this into container as a localscript
+    script.Parent.Active = true
+    script.Parent.Draggable = true
+    script.Parent.Selectable = true
+    
+end
+coroutine.wrap(ZVFFSY_fake_script)()
