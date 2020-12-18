@@ -15,7 +15,7 @@ TorsoEsp.CanCollide = false
 local BoxHandleAdornment = Instance.new("BoxHandleAdornment")
 BoxHandleAdornment.Adornee = nil
 BoxHandleAdornment.AlwaysOnTop = true
-BoxHandleAdornment.Color3 = Color3.fromRGB(255, 255, 255)
+BoxHandleAdornment.Color3 = Color3.fromRGB(170, 85, 255)
 BoxHandleAdornment.Size = Vector3.new(2, 2, 1)
 BoxHandleAdornment.Transparency = 0.5
 BoxHandleAdornment.ZIndex = 2
@@ -34,7 +34,7 @@ for i, v in pairs(gplrs) do
 	local BoxHandleAdornment = Instance.new("BoxHandleAdornment")
 BoxHandleAdornment.Adornee = v.Character.HumanoidRootPart
 BoxHandleAdornment.AlwaysOnTop = true
-BoxHandleAdornment.Color3 = Color3.fromRGB(255, 255, 255)
+BoxHandleAdornment.Color3 = Color3.fromRGB(170, 85, 255)
 BoxHandleAdornment.Size = Vector3.new(2, 2, 1)
 BoxHandleAdornment.Transparency = 0.5
 BoxHandleAdornment.ZIndex = 2
