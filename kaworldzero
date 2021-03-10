@@ -1,5 +1,5 @@
-getgenv().killallRange = 99999999999999999-- the range where killaura will trigger 
-getgenv().cooldown = .1 -- the wait between attacks
+getgenv().killallRange = 9999999999 -- the range where killaura will trigger 
+getgenv().cooldown = .0 -- the wait between attacks
 -- getting all the classes 
 local player = game:GetService("Players").LocalPlayer
 local ult
@@ -173,7 +173,7 @@ function kill()
         end
     end
     -- a caution wait
-    wait(3)
+    wait(1)
 end
 -- main kill loop 
 while wait() do 
