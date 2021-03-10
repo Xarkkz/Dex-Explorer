@@ -1,5 +1,5 @@
 getgenv().killallRange = 99999999999999999-- the range where killaura will trigger 
-getgenv().cooldown = .4 -- the wait between attacks
+getgenv().cooldown = .1 -- the wait between attacks
 -- getting all the classes 
 local player = game:GetService("Players").LocalPlayer
 local ult
